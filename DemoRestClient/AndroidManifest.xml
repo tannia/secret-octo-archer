@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demorestclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.demorestclient.MainActivity"
+            android:label="@string/app_name" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.ListSongs"
+            android:label="@string/title_activity_list_songs" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.SearchSong"
+            android:label="@string/title_activity_search_song" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.CrearUsuario"
+            android:label="@string/title_activity_create_song" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Sesion"
+            android:label="@string/title_activity_sesion" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.ActPrincipal"
+            android:label="@string/title_activity_act_principal" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Concursos"
+            android:label="@string/title_activity_concursos" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Notificaciones"
+            android:label="@string/title_activity_notificaciones" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Eventos"
+            android:label="@string/title_activity_eventos" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Perfil"
+            android:label="@string/title_activity_perfil" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Evento_Seleccionado"
+            android:label="@string/title_activity_evento__seleccionado" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.Concurso_Seleccionado"
+            android:label="@string/title_activity_concurso__seleccionado" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.LocalBinder"
+            android:label="@string/title_activity_local_binder" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.BlockingWorker"
+            android:label="@string/title_activity_blocking_worker" >
+        </activity>
+        <activity
+            android:name="com.example.demorestclient.BoundService"
+            android:label="@string/title_activity_bound_service" >
+        </activity>
+        
+        <service android:name=".BoundService"></service>
+        
+    </application>
+
+</manifest>

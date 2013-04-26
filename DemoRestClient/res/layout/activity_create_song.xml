@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearUsuario" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:onClick="createSong"
+        android:text="@string/create_song" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignTop="@+id/EditText01"
+        android:layout_marginTop="17dp" >
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/radio0"
+        android:layout_alignBottom="@+id/radio0"
+        android:layout_alignRight="@+id/EditText01"
+        android:text="Masculino" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:ems="10"
+        android:hint="Identificacion"
+        android:inputType="textUri" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUrl"
+        android:layout_below="@+id/editTextUrl"
+        android:ems="10"
+        android:hint="Pass"
+        android:inputType="textUri" />
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText01"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@+id/radio1"
+        android:checked="true"
+        android:text="Femenino" />
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radio1"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textUri" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/EditText02"
+        android:layout_alignRight="@+id/EditText02"
+        android:layout_below="@+id/EditText02"
+        
+        
+    	/>
+    
+
+</RelativeLayout>
